@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简洁表盘时钟</title>
+    <style>
+        .box {
+            width: 600px;
+            height: 600px;
+            margin: 100px auto;
+            background: url(images/clock.jpg) no-repeat;
+            position: relative;
+        }
+        .box div {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top:0;
+            left:0;
+
+        }
+        .h {
+            background: url(images/hour.png) no-repeat center ;
+        }
+        .m {
+            background: url(images/minute.png) no-repeat center;
+        }
+        .s {
+            background: url(images/second.png) no-repeat center;
+        }
+    </style>
+</head>
+<body>
+ <div class="box">
+     <div class="h" id="hour"></div>
+     <div class="m" id="minute"></div>
+     <div class="s" id="second"></div>
+ </div>
+</body>
+</html>
+<script>
+        var hour = document.getElementById("hour");
+        var minute = document.getElementById("minute");
+        var second = document.getElementById("second");
+
+        var s = 0, m = 0, h=0;
+        setInterval(function () {
+            var date = new Date();
+            ms = date.getMilliseconds();
+            s = date.getSeconds() + ms / 1000;
+            m = date.getMinutes() + s / 60;
+            h = date.getHours() % 12 + m / 60;
+            // 每秒6度
+            second.style.webkitTransform = "rotate("+6*s+"deg)";
+            // 每分6度
+            minute.style.webkitTransform = "rotate("+6*m+"deg)";
+            // 每小时30度(360/12)
+            hour.style.webkitTransform = "rotate("+30*h+"deg)";
+
+            second.style.MozTransform = "rotate("+6*s+"deg)";
+            // 每分6度
+            minute.style.MozTransform = "rotate("+6*m+"deg)";
+            // 每小时30度(360/12)
+            hour.style.MozTransform = "rotate("+30*h+"deg)";
+        },5);
+
+
+</script>
