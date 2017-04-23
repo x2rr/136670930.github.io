@@ -1,7 +1,7 @@
 html, body{
     font-size: 100%;
 	background:	#fff;
-	font-family: "microsoft yahei";
+	font-family: "Microsoft YaHei","微软雅黑","Microsoft JhengHei","华文细黑","STHeiti,MingLiu";
 	
 }
 p{
@@ -1563,50 +1563,46 @@ h3.other-nw {
 	-o-transform: scale(1.15) rotate(45deg);
 	transform: scale(1.15) rotate(45deg);
 } 
-.social_facebook {
-	background: #3b5998;
+.social_qq {
+	background: #16bcfa;
 	left: 0;
 	top: 0%;
 }
-.entypo-facebook:before {
+.entypo-qq:before {
     content: " ";
-    background: url(../images/img-sp.png) no-repeat 7px -125px;
     display: block;
     width: 3em;
     height: 3em;
 }
-.social_twitter{
-	background: #55acee;
+.social_weixin{
+	background: #02d20d;
 	top: 0%;
 	left: 50%;
 }
-.entypo-twitter:before {
+.entypo-weixin:before {
     content: " ";
-    background:url(../images/img-sp.png) no-repeat -35px -125px;
     display: block;
     width: 3em;
     height: 3em;
 }
-.social_dribbble {
-	background: #dc4e41;
+.social_weibo {
+	background: #f7671d;
 	left: 25%;
 	bottom: 0;
 }
-.entypo-dribbble:before {
+.entypo-weibo:before {
     content: " ";
-    background:url(../images/img-sp.png) no-repeat -74px -125px;
     display: block;
     width: 3em;
     height: 3em;
 }
-.social_behance {
-	background: #bd081c;
+.social_google {
+	background: #db4437;
 	bottom: 0;
 	left: 75%;
 }
-.entypo-behance:before {
+.entypo-google:before {
     content: " ";
-    background:url(../images/img-sp.png) no-repeat -117px -125px;
     display: block;
     width: 3em;
     height: 3em;
