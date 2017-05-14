@@ -80,16 +80,16 @@
 		$.each(['Days','Hours','Minutes','Seconds'],function(i){
 			var boxName;
 			if(this=="Days") {
-				boxName = "Days";
+				boxName = "天";
 			}
 			else if(this=="Hours") {
-				boxName = "Hours";
+				boxName = "小时";
 			}
 			else if(this=="Minutes") {
-				boxName = "Minutes";
+				boxName = "分钟";
 			}
 			else {
-				boxName = "Seconds";
+				boxName = "秒";
 			}
 			$('<div class="count'+this+'">' +
 				'<span class="position">' +
