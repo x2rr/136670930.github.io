@@ -1914,10 +1914,10 @@ var defaults = module.exports = {
     styles: '',
 
     strings: {
-        button: 'Shop More',
-        subtotal: 'Subtotal:',
+        button: '结算',
+        subtotal: '总价:',
         discount: 'Discount:',
-        empty: 'Your shopping cart is empty'
+        empty: '你的购物车已满'
     }
 
 };
@@ -2408,7 +2408,7 @@ var currencies = {
     TTD: { before: 'TT$' },
     TWD: { before: 'NT$' },
     UAH: { before: '\u20b4' },
-    USD: { before: '$', code: true },
+    RMB: { before: '$', code: true },
     UYU: { before: '$U' },
     VEF: { before: 'Bs' },
     VND: { before: '\u20ab' },
@@ -2418,7 +2418,7 @@ var currencies = {
 
 
 module.exports = function currency(amount, config) {
-    var code = config && config.currency || 'USD',
+    var code = config && config.currency || 'RMB',
         value = currencies[code],
         before = value.before || '',
         after = value.after || '',
