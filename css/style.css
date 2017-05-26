@@ -567,13 +567,24 @@ li.w3pages .dropdown-menu > li > a:hover{
     border: none;
 }
 .video-img {
-    background: url(../images/2.jpg)no-repeat right center;
+    background: url(../images/2.jpg)no-repeat center center;
     -webkit-background-size: cover;
     background-size: cover;
     -moz-background-size: cover;
 	-o-background-size: cover;
 	-ms-background-size: cover;
 	min-height: 455px;
+}
+.video-imgbgc {
+	background: rgba(0,0,0,0.5);
+	min-height: 455px;
+	text-align: center;
+	
+}
+.video-imgbgc h2 {
+	line-height: 455px;
+	color: white;
+	font-size: 26px;
 }
 .video-img a {
     display: inline-block;
