@@ -1,53 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<title>联系我们</title>
-<!-- for-mobile-apps -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-	function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //for-mobile-apps -->
-<!-- Custom Theme files -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" /> 
-<!-- //Custom Theme files -->
-<!-- font-awesome icons -->
-<link href="css/font-awesome.css" rel="stylesheet"> 
-<!-- //font-awesome icons -->
-<!-- js -->
-<script src="js/jquery.min.js"></script> 
-<!-- //js -->  
-<!-- web fonts --> 
-<link href='http://fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-<!-- //web fonts --> 
-<!-- for bootstrap working -->
-<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
-<!-- //for bootstrap working -->
-<!-- start-smooth-scrolling -->
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
-<!-- //end-smooth-scrolling --> 
+<html lang="zh">
 
-<!--map api-->
-<style type="text/css">
-	.BMapLabel {
-		max-width: none;
-	}
-</style>
-<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+	<head>
+		<title>Home</title>
+		<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="" />
+		<!--<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+	function hideURLbar(){ window.scrollTo(0,1); } </script>-->
+		<!-- //for-mobile-apps -->
+		<!-- Custom Theme files -->
+		<link href="/favicon.ico" rel="shortcut icon">
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+		<!-- //Custom Theme files -->
+		<!-- font-awesome icons -->
+		<link href="css/font-awesome.css" rel="stylesheet">
+		<!-- //font-awesome icons -->
+		<!-- js -->
+		<script src="js/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/jquery.countdown.css" />
+		<!-- countdown -->
+		<!-- //js -->
 
-</head> 
-<body> 
-	<!-- header modal -->
+		<!-- start-smooth-scrolling -->
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event) {
+					event.preventDefault();
+					$('html,body').animate({
+						scrollTop: $(this.hash).offset().top
+					}, 1000);
+				});
+			});
+		</script>
+		<!-- //end-smooth-scrolling -->
+	</head>
+
+	<body>
+		<!-- for bootstrap working -->
+		<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+		<!-- //for bootstrap working -->
+		<!-- header modal -->
 		<div class="modal fade" id="myModal88" tabindex="-1" role="dialog" aria-labelledby="myModal88" aria-hidden="true">
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
@@ -250,178 +247,148 @@
 								</ul>
 							</li>
 							<li>
-								<a href="about.html">关于我们</a>
+								<a href="about.html"  class="act">关于我们</a>
 							</li>
 							<li class="w3pages">
 								<a href="#" role="button">页面<span></span></a>
 
 							</li>
 							<li>
-								<a href="mail.html"  class="act">联系我们</a>
+								<a href="mail.html">联系我们</a>
 							</li>
 						</ul>
 					</div>
 				</nav>
 			</div>
 		</div>
-		<!-- //navigation -->
-		<!-- banner -->
 	<!-- //navigation -->
 	<!-- banner -->
 	<div class="banner banner1">
 		<div class="container">
-			<h2>联系我们</h2>
+			<h2>关于我们</h2>
 		</div>
 	</div>
-	<!-- //banner -->    
+	<!-- //banner -->   
 	<!-- breadcrumbs -->
 	<div class="breadcrumb_dress">
 		<div class="container">
 			<ul>
-				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 首页</a> <i>/</i></li>
-				<li>联系我们</li>
+				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 主页</a> <i>/</i></li>
+				<li>关于我们</li>
 			</ul>
 		</div>
 	</div>
 	<!-- //breadcrumbs --> 
-	<!-- mail -->
-	<div class="mail">
-		<div class="container">
-			<h3>联系我们</h3>
-			<div class="agile_mail_grids">
-				<div class="col-md-5 contact-left">
-					<h4>地址</h4>
-					<p>北京房山区
-						<span>燕山迎风街2号</span></p>
-					<ul>
-						<li>电话 : 123 4589 2456</li>
-						<li>手机 : 456 4589 2456</li>
-						<li>传真 : 789 4589 2456</li>
-						<li><a href="mailto:info@example.com">info@example.com</a></li>
-					</ul>
+	<!-- about -->
+	<div class="about">
+		<div class="container">	
+			<div class="w3ls_about_grids">
+				<div class="col-md-6 w3ls_about_grid_left">
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse 
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+						cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+						anim id est laborum.</p>
+					<div class="col-xs-2 w3ls_about_grid_left1">
+						<span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-10 w3ls_about_grid_left2">
+						<p>Sunt in culpa qui officia deserunt mollit 
+							anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse 
+						cillum dolore eu fugiat nulla pariatur.</p>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="col-xs-2 w3ls_about_grid_left1">
+						<span class="glyphicon glyphicon-flash" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-10 w3ls_about_grid_left2">
+						<p>Sunt in culpa qui officia deserunt mollit 
+							anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse 
+						cillum dolore eu fugiat nulla pariatur.</p>
+					</div>
+					<div class="clearfix"> </div>
 				</div>
-				<div class="col-md-7 contact-left">
-					<h4>联系方式</h4>
-					<form action="#" method="post">
-						<input type="text" name="Name" placeholder="你的名字" required="">
-						<input type="email" name="Email" placeholder="邮箱" required="">
-						<input type="text" name="Telephone" placeholder="电话" required="">
-						<textarea name="message" placeholder="内容..." required=""></textarea>
-						<input type="submit" value="提交" >
-					</form>
+				<div class="col-md-6 w3ls_about_grid_right">
+					<img src="images/52.jpg" alt=" " class="img-responsive" />
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-
-			<div class="contact-bottom">
-				<center>
-                            <!--百度地图容器-->
-                            <div style="width: 90%; height: 460px; border: #ccc solid 1px;margin-top:50px;" id="dituContent">
-                            </div>
-                            <script type="text/javascript">
-                                //创建和初始化地图函数：
-                                function initMap() {
-                                    createMap(); //创建地图
-                                    setMapEvent(); //设置地图事件
-                                    addMapControl(); //向地图添加控件
-                                    addMarker(); //向地图中添加marker
-                                }
-
-                                //创建地图函数：
-                                function createMap() {
-                                    var map = new BMap.Map("dituContent"); //在百度地图容器中创建一个地图
-                                    var point = new BMap.Point(115.964403, 39.736695); //定义一个中心点坐标
-                                    map.centerAndZoom(point, 18); //设定地图的中心点和坐标并将地图显示在地图容器中
-                                    window.map = map; //将map变量存储在全局
-                                }
-
-                                //地图事件设置函数：
-                                function setMapEvent() {
-                                    map.enableDragging(); //启用地图拖拽事件，默认启用(可不写)
-                                    map.enableScrollWheelZoom(); //启用地图滚轮放大缩小
-                                    map.enableDoubleClickZoom(); //启用鼠标双击放大，默认启用(可不写)
-                                    map.enableKeyboard(); //启用键盘上下左右键移动地图
-                                }
-
-                                //地图控件添加函数：
-                                function addMapControl() {
-                                    //向地图中添加缩放控件
-                                    var ctrl_nav = new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE });
-                                    map.addControl(ctrl_nav);
-                                    //向地图中添加缩略图控件
-                                    var ctrl_ove = new BMap.OverviewMapControl({ anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: 1 });
-                                    map.addControl(ctrl_ove);
-                                    //向地图中添加比例尺控件
-                                    var ctrl_sca = new BMap.ScaleControl({ anchor: BMAP_ANCHOR_BOTTOM_LEFT });
-                                    map.addControl(ctrl_sca);
-                                }
-
-                                //标注点数组
-                                var markerArr = [{ title: "北京中燕信息技术有限公司", content: "公司：北京中燕信息技术有限公司<br/>电话：010-80346128<br/>地址：北京市房山区燕山迎风街2号", point: "115.963715|39.736924", isOpen: 0, icon: { w: 21, h: 21, l: 46, t: 0, x: 6, lb: 5} }
-		 ];
-                                //创建marker
-                                function addMarker() {
-                                    for (var i = 0; i < markerArr.length; i++) {
-                                        var json = markerArr[i];
-                                        var p0 = json.point.split("|")[0];
-                                        var p1 = json.point.split("|")[1];
-                                        var point = new BMap.Point(p0, p1);
-                                        var iconImg = createIcon(json.icon);
-                                        var marker = new BMap.Marker(point, { icon: iconImg });
-                                        var iw = createInfoWindow(i);
-                                        var label = new BMap.Label(json.title, { "offset": new BMap.Size(json.icon.lb - json.icon.x + 10, -20) });
-                                        marker.setLabel(label);
-                                        map.addOverlay(marker);
-                                        label.setStyle({
-                                            borderColor: "#808080",
-                                            color: "#333",
-                                            cursor: "pointer"
-                                        });
-
-                                        (function () {
-                                            var index = i;
-                                            var _iw = createInfoWindow(i);
-                                            var _marker = marker;
-                                            _marker.addEventListener("click", function () {
-                                                this.openInfoWindow(_iw);
-                                            });
-                                            _iw.addEventListener("open", function () {
-                                                _marker.getLabel().hide();
-                                            })
-                                            _iw.addEventListener("close", function () {
-                                                _marker.getLabel().show();
-                                            })
-                                            label.addEventListener("click", function () {
-                                                _marker.openInfoWindow(_iw);
-                                            })
-                                            if (!!json.isOpen) {
-                                                label.hide();
-                                                _marker.openInfoWindow(_iw);
-                                            }
-                                        })()
-                                    }
-                                }
-                                //创建InfoWindow
-                                function createInfoWindow(i) {
-                                    var json = markerArr[i];
-                                    var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>" + json.content + "</div>");
-                                    return iw;
-                                }
-                                //创建一个Icon
-                                function createIcon(json) {
-                                    var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w, json.h), { imageOffset: new BMap.Size(-json.l, -json.t), infoWindowOffset: new BMap.Size(json.lb + 5, 1), offset: new BMap.Size(json.x, json.h) })
-                                    return icon;
-                                }
-
-                                initMap(); //创建和初始化地图
-                            </script>
-                        </center>
+		</div>
+	</div>
+	<!-- //about --> 
+	<!-- team -->
+	<div class="team">
+		<div class="container">
+			<h3>Meet Our Team</h3>
+			<div class="wthree_team_grids">
+				<div class="col-md-3 wthree_team_grid">
+					<img src="images/t4.png" alt=" " class="img-responsive" />
+					<h4>Smith Allen <span>Manager</span></h4>
+					<div class="agileits_social_button">
+						<ul>
+							<li><a href="#" class="facebook"> </a></li>
+							<li><a href="#" class="twitter"> </a></li>
+							<li><a href="#" class="google"> </a></li>
+							<li><a href="#" class="pinterest"> </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 wthree_team_grid">
+					<img src="images/t5.png" alt=" " class="img-responsive" />
+					<h4>Laura James <span>Designer</span></h4>
+					<div class="agileits_social_button">
+						<ul>
+							<li><a href="#" class="facebook"> </a></li>
+							<li><a href="#" class="twitter"> </a></li>
+							<li><a href="#" class="google"> </a></li>
+							<li><a href="#" class="pinterest"> </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 wthree_team_grid">
+					<img src="images/t6.png" alt=" " class="img-responsive" />
+					<h4>Crisp Doe <span>Director</span></h4>
+					<div class="agileits_social_button">
+						<ul>
+							<li><a href="#" class="facebook"> </a></li>
+							<li><a href="#" class="twitter"> </a></li>
+							<li><a href="#" class="google"> </a></li>
+							<li><a href="#" class="pinterest"> </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 wthree_team_grid">
+					<img src="images/t7.png" alt=" " class="img-responsive" />
+					<h4>Linda Rosy <span>Quality Checker</span></h4>
+					<div class="agileits_social_button">
+						<ul>
+							<li><a href="#" class="facebook"> </a></li>
+							<li><a href="#" class="twitter"> </a></li>
+							<li><a href="#" class="google"> </a></li>
+							<li><a href="#" class="pinterest"> </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+				<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
+					voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
+					repellat.</p>
 			</div>
 		</div>
 	</div>
-	<!-- //mail -->
-<!-- newsletter -->
-			<div class="newsletter">
+	<!-- //team -->
+	<!-- team-bottom -->
+	<div class="team-bottom">
+		<div class="container">
+			<h3>Are You Ready For Deals? Flat <span>30% Offer </span>on Mobiles</h3>
+			<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
+				voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
+				repellat.</p>
+			<a href="products.html">Shop Now</a>
+		</div>
+	</div>
+	<!-- //team-bottom -->
+	<!-- newsletter -->
+		<div class="newsletter">
 			<div class="container">
 				<div class="col-md-6 w3agile_newsletter_left">
 					<h3>意见反馈</h3>

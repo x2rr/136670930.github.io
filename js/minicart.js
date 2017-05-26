@@ -1917,7 +1917,7 @@ var defaults = module.exports = {
         button: '结算',
         subtotal: '总价:',
         discount: 'Discount:',
-        empty: '你的购物车已满'
+        empty: '你的购物车是空的'
     }
 
 };
